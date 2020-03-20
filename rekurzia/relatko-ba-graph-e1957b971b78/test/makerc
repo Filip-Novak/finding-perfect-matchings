@@ -1,0 +1,15 @@
+# this can be replaced by an absolute path
+BA_GRAPH_INCLUDE_PATH := $(dir $(abspath ../$(lastword $(MAKEFILE_LIST))))include
+
+NAUTY_INCLUDE_PATH = /usr/include/nauty
+NAUTY_LIB_PATH = /usr/lib/x86_64-linux-gnu/
+
+CRYPTOMINISAT_INCLUDE_PATH = /usr/local/include/cryptominisat5
+CRYPTOMINISAT_LIB_PATH = /usr/local/lib
+
+DEFAULT_CXXFLAGS := -std=c++17 -fconcepts -I$(BA_GRAPH_INCLUDE_PATH)
+DEFAULT_DBGFLAGS := -g -O0 -pedantic -Wall -Wextra -DBA_GRAPH_DEBUG -D_GLIBCXX_DEBUG
+DEFAULT_LDFLAGS :=
+DEFAULT_LDLIBS := -lstdc++fs
+
+MAKEFLAGS += --no-builtin-rules
