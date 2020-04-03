@@ -17,10 +17,25 @@ inline std::vector<Edge> cnf_kfactor_vars_to_edge(const Graph &G)
     return G.list(RP::all(), IP::primary(), IT::e());
 }
 
-inline CNF cnf_kfactor(const Graph &G, int k)
+inline std::vector<Number> vertex_vector_to_number_vector(
+    const Graph &G,
+    const std::vector<Vertex> &vertexVector)
+{
+    auto numberVector = std::vector<Number>{};
+    for (Vertex v : vertexVector)
+    {
+        numberVector.push_back(G.find(v)->n());
+    }
+    return numberVector;
+}
+
+inline CNF cnf_kfactor(const Graph &G, int k,
+    const std::vector<Number>& possiblyNotCoveredVertices)
 {
 #ifdef BA_GRAPH_DEBUG
     assert(k >= 1);
+    for (auto n : possiblyNotCoveredVertices)
+        assert(G.contains(n));
 #endif
     EdgeLabeling<int> vars;
     int varsCount = 0;
@@ -33,19 +48,25 @@ inline CNF cnf_kfactor(const Graph &G, int k)
         std::vector<Clause> dnf;
         auto edges = r.list(IP::all(), IT::e());
         auto edgesSet = std::set<Edge>(edges.begin(), edges.end());
-        auto subsets = all_subsets(edgesSet, k);
-        for (auto set : subsets) {
-            std::vector<Lit> clause;
-            for (Edge e : set)
-                clause.push_back(Lit(vars[e], false));
-            dnf.push_back(clause);
+        bool shouldPossiblyNotCoverVertex = std::find(possiblyNotCoveredVertices.begin(), possiblyNotCoveredVertices.end(), r.n()) 
+            != possiblyNotCoveredVertices.end();
+        if (!shouldPossiblyNotCoverVertex)
+        {
+            auto subsets = all_subsets(edgesSet, k);
+            for (auto set : subsets) {
+                std::vector<Lit> clause;
+                for (Edge e : set)
+                    clause.push_back(Lit(vars[e], false));
+                dnf.push_back(clause);
+            }
+
+            auto cnf = dnf_to_cnf(dnf, varsCount);
+            varsCount += dnf.size();
+            result.insert(result.end(), cnf.begin(), cnf.end());
         }
-        auto cnf = dnf_to_cnf(dnf, varsCount);
-        varsCount += dnf.size();
-        result.insert(result.end(), cnf.begin(), cnf.end());
     
         // at most k edges at a vertex are included
-        subsets = all_subsets(edgesSet, k + 1);
+        auto subsets = all_subsets(edgesSet, k + 1);
         for (auto set : subsets) {
             std::vector<Lit> clause;
             for (Edge e : set)
@@ -56,14 +77,30 @@ inline CNF cnf_kfactor(const Graph &G, int k)
     return std::pair(varsCount, result);
 }
 
+inline CNF cnf_kfactor(const Graph &G, int k,
+    const std::vector<Vertex> &possiblyNotCoveredVertices)
+{
+    return cnf_kfactor(G, k, vertex_vector_to_number_vector(G, possiblyNotCoveredVertices));
+}
+
+inline CNF cnf_kfactor(const Graph &G, int k)
+{
+    return cnf_kfactor(G, k, std::vector<Number>{});
+}
+
 inline std::vector<Edge> cnf_perfect_matching_vars_to_edge(const Graph &G)
 {
     return G.list(RP::all(), IP::primary(), IT::e());
 }
 
 // TODO pridat moznost predpisat / zakazat hrany, asi v podobe Location aj Edge
-inline CNF cnf_perfect_matching(const Graph &G)
+inline CNF cnf_perfect_matching(const Graph &G,
+    const std::vector<Number>& possiblyNotCoveredVertices)
 {
+#ifdef BA_GRAPH_DEBUG
+    for (auto n : possiblyNotCoveredVertices)
+        assert(G.contains(n));
+#endif
     EdgeLabeling<int> vars;
     int varsCount = 0;
     for (auto ii : G.list(RP::all(), IP::primary()))
@@ -73,10 +110,15 @@ inline CNF cnf_perfect_matching(const Graph &G)
     result.reserve(G.order() + G.size()); // not enough but a good start
     for (auto &r : G) {
         // at least one edge at a vertex is included
-        std::vector<Lit> clause1;
-        for (auto e : r.list(IP::all(), IT::e()))
-            clause1.push_back(Lit(vars[e], false));
-        result.push_back(clause1);
+        bool shouldPossiblyNotCoverVertex = std::find(possiblyNotCoveredVertices.begin(), possiblyNotCoveredVertices.end(), r.n()) 
+            != possiblyNotCoveredVertices.end();
+        if (!shouldPossiblyNotCoverVertex)
+        {
+            std::vector<Lit> clause1;
+            for (auto e : r.list(IP::all(), IT::e()))
+                clause1.push_back(Lit(vars[e], false));
+            result.push_back(clause1);
+        }
 
         // at most one edge at a vertex is included
         auto edges = r.list(IP::all(), IT::e());
@@ -90,6 +132,17 @@ inline CNF cnf_perfect_matching(const Graph &G)
         }
     }
     return std::pair(varsCount, result);
+}
+
+inline CNF cnf_perfect_matching(const Graph &G,
+    const std::vector<Vertex>& possiblyNotCoveredVertices)
+{
+    return cnf_perfect_matching(G, vertex_vector_to_number_vector(G, possiblyNotCoveredVertices));
+}
+
+inline CNF cnf_perfect_matching(const Graph &G)
+{
+    return cnf_perfect_matching(G, std::vector<Number>{});
 }
 
 namespace internal

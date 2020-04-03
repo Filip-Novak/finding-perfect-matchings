@@ -79,13 +79,23 @@ inline bool oddnessCallback(Graph &F, int *currentOddnessEstimate)
 
 } // namespace internal
 
-inline int oddness_allsat(const AllSatSolver &solver, const Graph &G)
+inline int oddness_allsat(const AllSatSolver &solver, const Graph &G,
+    const std::vector<Number> &possiblyNotCoveredVertices)
 {
+#ifdef BA_GRAPH_DEBUG
+    for (auto n : possiblyNotCoveredVertices)
+        assert(G.contains(n));
+#endif
     Factory f;
     Graph H(copy_other_factory(G, f));
     int oddness = H.order() + 1;
-    two_factors_enumerate_allsat_cubic(solver, H, f, internal::oddnessCallback, &oddness);
+    two_factors_enumerate_allsat_cubic(solver, H, f, internal::oddnessCallback, &oddness, possiblyNotCoveredVertices);
     return oddness;
+}
+
+inline int oddness_allsat(const AllSatSolver &solver, const Graph &G)
+{
+    return oddness_allsat(solver, G, std::vector<Number>{});
 }
 
 }  // namespace end

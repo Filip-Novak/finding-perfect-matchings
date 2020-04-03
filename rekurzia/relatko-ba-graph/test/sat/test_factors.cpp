@@ -62,10 +62,12 @@ int main() {
 
     g = std::move(create_petersen());
     assert(has_perfect_matching_sat(solver, g));
+    assert(has_perfect_matching_sat(solver, g, std::vector<Vertex>{g[0].v()}));
     c = 0;
     assert(perfect_matchings_enumerate_sat(allSolver, g, cb, &c));
     assert(c == 6);
     assert(perfect_matchings_list_sat(allSolver, g).size() == 6);
+    assert(perfect_matchings_list_sat(allSolver, g, std::vector<Vertex>{g[0].v(), g[1].v()}).size() == 8);
     deleteV(g, 0);
     assert(!has_perfect_matching_sat(solver, g));
     assert(perfect_matchings_list_sat(allSolver, g).size() == 0);
@@ -88,6 +90,9 @@ int main() {
     assert(has_kfactor_sat(solver, g, 3));
     assert(!has_kfactor_sat(solver, g, 4));
     assert(kfactors_list_sat(allSolver, g, 1, static_factory).size() == 6);
+    assert(kfactors_list_sat(allSolver, g, 1, static_factory, std::vector<Number>{g[0].n(), g[1].n()}).size() == 8);
+    assert(kfactors_list_sat(allSolver, g, 1, static_factory, std::vector<Vertex>{g[0].v(), g[1].v()}).size() == 8);
+    assert(kfactors_list_sat(allSolver, g, 1, static_factory, std::vector<Number>{g[0].n()}).size() == 6);
     assert(kfactors_list_sat(allSolver, g, 2, static_factory).size() == 6);
     assert(kfactors_list_sat(allSolver, g, 3, static_factory).size() == 1);
     assert(kfactors_list_sat(allSolver, g, 4, static_factory).size() == 0);

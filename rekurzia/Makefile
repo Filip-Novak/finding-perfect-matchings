@@ -1,4 +1,4 @@
-CFLAGS = -std=c++17 -fconcepts -IC:\Users\Filip\Desktop\github-bakalarka\rekurzia\relatko-ba-graph-e1957b971b78\include
+CFLAGS = -std=c++17 -fconcepts -I/home/filip/Desktop/Bakalarka/rekurzia/relatko-ba-graph/include
 #LDFLAGS = -lcryptominisat5
 LDFLAGS =
 DBGFLAGS = -g -O0 -pedantic -Wall -Wextra -DBA_GRAPH_DEBUG
@@ -11,7 +11,7 @@ all: recursion
 recursion:
 	$(COMPILE) main.cpp -o recursion $(LDFLAGS)
 
-server_dbg:
+recursion_dbg:
 	$(COMPILE_DBG) main.cpp -o recursion $(LDFLAGS)
 
 
