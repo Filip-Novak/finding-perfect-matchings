@@ -1,0 +1,59 @@
+Na kubických grafoch:
+Rekurzia - hrany ulozene v sete E boli zoradene od najmensej po najvacsiu vzhladom na cisla vrcholov, 
+ktore tvoria hranu. V rekurzii sme vyberali hrany v sete E od zaciatku po koniec.
+	Prve zbehnutie:
+		Min: 37 microseconds
+		Max: 1694360465 microseconds
+		Priemer: 8.93915e+07 = 89391500 microseconds 
+		Median: 142123 microseconds 
+
+	Druhe zbehnutie:
+		Min: 36 microseconds
+		Max: 1580977547 microseconds
+		Priemer: 8.37001e+07 = 83700100 microseconds
+		Median: 130970 microseconds 
+
+
+Rekurzia - hrany ulozene v sete E boli zoradene od najmensej po najvacsiu vzhladom na cisla vrcholov, 
+ktore tvoria hranu. V rekurzii sme vyberali hrany v sete E na preskacku, raz zo zaciatku, potom z konca a takto sa to opakovalo. 
+	Prve zbehnutie:
+		Min: 35 microseconds
+		Max: 1511732711 microseconds
+		Priemer: 7.99596e+07 = 79959600 microseconds
+		Median: 107257 microseconds 
+	
+	Druhe zbehnutie:
+		Min: 52 microseconds
+		Max: 1566126476 microseconds
+		Priemer: 8.32414e+07 = 83241400 microseconds
+		Median: 109710 microseconds
+
+
+Rekurzia -  hrany ulozene v sete E boli zoradene od najmensej po najvacsiu vzhladom na cisla vrcholov,
+ktore tvoria hranu. V rekurzii sme vyberali hrany v sete E od konca po zaciatok.
+	Prve zbehnutie:
+		Min: 37 microseconds
+		Max: 1942435543 microseconds
+		Priemer: 1.04002e+08 = 104002000 microseconds
+		Median: 103904,5 microseconds 60264 147545
+
+	Druhe zbehnutie:
+		Min: 35 microseconds
+		Max: 1779495794 microseconds
+		Priemer: 9.61152e+07 = 96115200 microseconds
+		Median: 100272,5 microseconds 55370 145175
+
+
+All SAT solver:
+	Prve zbehnutie:
+		Min: 2622 microseconds
+		Max: 26522 microseconds
+		Priemer: 6874.65 microseconds
+		Median: 5347 microseconds
+
+	Druhe zbehnutie:
+		Min: 3701 microseconds
+		Max: 26882 microseconds
+		Priemer: 7480.54 microseconds
+		Median: 5776 microseconds
+

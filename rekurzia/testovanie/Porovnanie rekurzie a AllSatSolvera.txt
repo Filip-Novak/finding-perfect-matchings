@@ -1,0 +1,268 @@
+Snarks:
+	cubic_cc04_g04:
+		.10 - Rec. - Elapsed time in nanoseconds : 588637 ns
+			     Elapsed time in microseconds : 588 µs
+			     Elapsed time in milliseconds : 0 ms
+			     Elapsed time in seconds : 0 sec
+		      
+		      Sol. - Elapsed time in nanoseconds : 41076303 ns
+			     Elapsed time in microseconds : 41076 µs
+			     Elapsed time in milliseconds : 41 ms
+			     Elapsed time in seconds : 0 sec
+
+		.18 - Rec. - Elapsed time in nanoseconds : 22046125 ns
+			     Elapsed time in microseconds : 22046 µs
+			     Elapsed time in milliseconds : 22 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4800178 ns
+			     Elapsed time in microseconds : 4800 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+		.20 - Rec. - Elapsed time in nanoseconds : 55565640 ns
+			     Elapsed time in microseconds : 55565 µs
+			     Elapsed time in milliseconds : 55 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 3686570 ns
+			     Elapsed time in microseconds : 3686 µs
+			     Elapsed time in milliseconds : 3 ms
+			     Elapsed time in seconds : 0 sec
+
+		.22 - Rec. - Elapsed time in nanoseconds : 145250117 ns
+			     Elapsed time in microseconds : 145250 µs
+			     Elapsed time in milliseconds : 145 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 3793884 ns
+			     Elapsed time in microseconds : 3793 µs
+			     Elapsed time in milliseconds : 3 ms
+			     Elapsed time in seconds : 0 sec
+
+		.24 - Rec. - Elapsed time in nanoseconds : 453033908 ns
+			     Elapsed time in microseconds : 453033 µs
+			     Elapsed time in milliseconds : 453 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4156550 ns
+			     Elapsed time in microseconds : 4156 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+		.26 - Rec. - Elapsed time in nanoseconds : 1535722851 ns
+			     Elapsed time in microseconds : 1535722 µs
+			     Elapsed time in milliseconds : 1535 ms
+			     Elapsed time in seconds : 1 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4274344 ns
+			     Elapsed time in microseconds : 4274 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+	cubic_cc04_g05:
+		.10 - Rec. - Elapsed time in nanoseconds : 565882 ns
+			     Elapsed time in microseconds : 565 µs
+			     Elapsed time in milliseconds : 0 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 5826245 ns
+			     Elapsed time in microseconds : 5826 µs
+			     Elapsed time in milliseconds : 5 ms
+			     Elapsed time in seconds : 0 sec
+
+		.18 - Rec. - Elapsed time in nanoseconds : 23809566 ns
+			     Elapsed time in microseconds : 23809 µs
+			     Elapsed time in milliseconds : 23 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 2727782 ns
+			     Elapsed time in microseconds : 2727 µs
+			     Elapsed time in milliseconds : 2 ms
+			     Elapsed time in seconds : 0 sec
+
+		.28 - Rec. - Elapsed time in nanoseconds : 4662979078 ns
+			     Elapsed time in microseconds : 4662979 µs
+			     Elapsed time in milliseconds : 4662 ms
+			     Elapsed time in seconds : 4 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4688254 ns
+			     Elapsed time in microseconds : 4688 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+	cubic_cc04_g06:
+		.28 - Rec. - Elapsed time in nanoseconds : 4849670741 ns
+			     Elapsed time in microseconds : 4849670 µs
+			     Elapsed time in milliseconds : 4849 ms
+			     Elapsed time in seconds : 4 sec
+
+		      Sol. - Elapsed time in nanoseconds : 5678764 ns
+			     Elapsed time in microseconds : 5678 µs
+			     Elapsed time in milliseconds : 5 ms
+			     Elapsed time in seconds : 0 sec
+
+		.30 - Rec. - Elapsed time in nanoseconds : 15935267882 ns
+			     Elapsed time in microseconds : 15935267 µs
+			     Elapsed time in milliseconds : 15935 ms
+			     Elapsed time in seconds : 15 sec
+
+		      Sol. - Elapsed time in nanoseconds : 5295415 ns
+			     Elapsed time in microseconds : 5295 µs
+			     Elapsed time in milliseconds : 5 ms
+			     Elapsed time in seconds : 0 sec
+
+		.36 - Rec. - Elapsed time in nanoseconds : 524825622815 ns
+			     Elapsed time in microseconds : 524825622 µs
+			     Elapsed time in milliseconds : 524825 ms
+			     Elapsed time in seconds : 524 sec
+
+		      Sol. - Elapsed time in nanoseconds : 14205064 ns
+			     Elapsed time in microseconds : 14205 µs
+			     Elapsed time in milliseconds : 14 ms
+			     Elapsed time in seconds : 0 sec
+
+		.38 - Rec. - Elapsed time in nanoseconds : 1593740445397 ns
+			     Elapsed time in microseconds : 1593740445 µs
+			     Elapsed time in milliseconds : 1593740 ms
+			     Elapsed time in seconds : 1593 sec
+
+		      Sol. - Elapsed time in nanoseconds : 10589611 ns
+			     Elapsed time in microseconds : 10589 µs
+			     Elapsed time in milliseconds : 10 ms
+			     Elapsed time in seconds : 0 sec
+
+	cubic_cc05_g05:
+		.10 - Rec. - Elapsed time in nanoseconds : 264853 ns
+			     Elapsed time in microseconds : 264 µs
+			     Elapsed time in milliseconds : 0 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4222704 ns
+			     Elapsed time in microseconds : 4222 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+		.20 - Rec. - Elapsed time in nanoseconds : 50352438 ns
+			     Elapsed time in microseconds : 50352 µs
+			     Elapsed time in milliseconds : 50 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4623707 ns
+			     Elapsed time in microseconds : 4623 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+		.22 - Rec. - Elapsed time in nanoseconds : 146176698 ns
+			     Elapsed time in microseconds : 146176 µs
+			     Elapsed time in milliseconds : 146 ms
+			     Elapsed time in seconds : 0 sec
+
+		      Sol. - Elapsed time in nanoseconds : 4932051 ns
+			     Elapsed time in microseconds : 4932 µs
+			     Elapsed time in milliseconds : 4 ms
+			     Elapsed time in seconds : 0 sec
+
+
+		.28 - Rec. - Elapsed time in nanoseconds : 4435249790 ns
+			     Elapsed time in microseconds : 4435249 µs
+			     Elapsed time in milliseconds : 4435 ms
+			     Elapsed time in seconds : 4 sec
+
+		      Sol. - Elapsed time in nanoseconds : 5078215 ns
+			     Elapsed time in microseconds : 5078 µs
+			     Elapsed time in milliseconds : 5 ms
+			     Elapsed time in seconds : 0 sec
+
+		.30 - Rec. - Elapsed time in nanoseconds : 14490231090 ns
+			     Elapsed time in microseconds : 14490231 µs
+			     Elapsed time in milliseconds : 14490 ms
+			     Elapsed time in seconds : 14 sec
+
+		      Sol. - Elapsed time in nanoseconds : 5797160 ns
+			     Elapsed time in microseconds : 5797 µs
+			     Elapsed time in milliseconds : 5 ms
+			     Elapsed time in seconds : 0 sec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
