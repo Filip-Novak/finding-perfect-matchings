@@ -1,0 +1,118 @@
+Na 100 kubickych grafoch:
+Rekurzia s vyberanim hran na preskacku bez lokalnej podmienky, kde sme pouzivali Tutteho maticu medzi 30-70 percentami hran v matchingu:
+	Prve zbehnutie:
+		Min: 71 microseconds
+		Max: 51039839 microseconds
+		Priemer: 4.25049e+06 = 4250490 microseconds
+		Median: 55668.5 microseconds 
+
+	Druhe zbehnutie:
+		Min: 74 microseconds
+		Max: 50956349 microseconds
+		Priemer: 4.25876e+06 microseconds
+		Median: 34266.5 microseconds 
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu medzi 30-70 percentami hran v matchingu:
+	Prve zbehnutie:
+		Min: 55 microseconds
+		Max: 147931 microseconds
+		Priemer: 16547.9 microseconds
+		Median: 2853.5 microseconds
+
+	Druhe zbehnutie:
+		Min: 30 microseconds
+		Max: 147407 microseconds
+		Priemer: 16384 microseconds
+		Median: 2489 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu ked sme boli v polovici matchingu:
+	Prve zbehnutie:
+		Min: 32 microseconds
+		Max: 342710 microseconds
+		Priemer: 29435.9 microseconds
+		Median: 2630.5 microseconds
+
+	Druhe zbehnutie:
+		Min: 49 microseconds
+		Max: 337530 microseconds
+		Priemer: 29006 microseconds
+		Median: 3096 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu medzi 40-60 percentami hran v matchingu:
+	Prve zbehnutie:
+		Min: 35 microseconds
+		Max: 212395 microseconds
+		Priemer: 21670.3 microseconds
+		Median: 2861 microseconds
+
+	Druhe zbehnutie:
+		Min: 31 microseconds
+		Max: 216664 microseconds
+		Priemer: 21709.1 microseconds
+		Median: 3373.5 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu medzi 50-90 percentami hran matchingu:
+	Prve zbehnutie:
+		Min: 34 microseconds
+		Max: 391421 microseconds
+		Priemer: 33674.2 microseconds
+		Median: 3185 microseconds
+
+	Druhe zbehnutie:
+		Min: 32 microseconds
+		Max: 391382 microseconds
+		Priemer: 33452.5 microseconds
+		Median: 3817.5 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu vzdy, ked to bolo mozne (pri kazdom vnoreni do rekurzie):
+	Prve zbehnutie:
+		Min: 58 microseconds
+		Max: 127594 microseconds
+		Priemer: 12040.1 microseconds
+		Median: 1903 microseconds
+
+	Druhe zbehnutie:
+		Min: 51 microseconds
+		Max: 127861 microseconds
+		Priemer: 11959.3 microseconds
+		Median: 1800 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu vzdy, ked aktualny pocet hran v matchingu bol delitelny zaokruhlenym cislom znazornujucim 10% z celkoveho poctu hran v matchingu:
+	Prve zbehnutie:
+		Min: 36 microseconds
+		Max: 165398 microseconds
+		Priemer: 15221.6 microseconds
+		Median: 1721.5 microseconds
+
+	Druhe zbehnutie:
+		Min: 29 microseconds
+		Max: 164947 microseconds
+		Priemer: 15230.4 microseconds
+		Median: 1714 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme pouzivali Tutteho maticu medzi 10-90 percentami hran matchingu:
+	Prve zbehnutie:
+		Min: 43 microseconds
+		Max: 127849 microseconds
+		Priemer: 12218.9 microseconds
+		Median: 1888.5
+
+	Druhe zbehnutie:
+		Min: 60 microseconds
+		Max: 123753 microseconds
+		Priemer: 12211 microseconds
+		Median: 1761 microseconds
+
+Rekurzia s vyberanim hran na preskacku s lokalnou podmienkou, kde sme nepouzivali Tutteho maticu:
+	Prve zbehnutie:
+		Min: 30 microseconds
+		Max: 331354 microseconds
+		Priemer: 29194 microseconds
+		Median: 3880 microseconds
+
+	Druhe zbehnutie:
+		Min: 35 microseconds
+		Max: 323192 microseconds
+		Priemer: 28747.8 microseconds
+		Median: 2549.5 microseconds
+

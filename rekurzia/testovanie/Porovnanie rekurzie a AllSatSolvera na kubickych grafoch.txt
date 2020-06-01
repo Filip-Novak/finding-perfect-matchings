@@ -1,0 +1,105 @@
+100 kubickych grafov:
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 78 microseconds
+			Max: 128399 microseconds
+			Priemer: 11953.8 microseconds
+			Median: 1778.5 microseconds 
+
+		Druhe zbehnutie:
+			Min: 66 microseconds
+			Max: 125976 microseconds
+			Priemer: 12213.4 microseconds
+			Median: 1834.5 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 2067 microseconds
+			Max: 25259 microseconds
+			Priemer: 4786.63 microseconds
+			Median: 3744.5 microseconds
+
+		Druhe zbehnutie:
+			Min: 2080 microseconds
+			Max: 15928 microseconds
+			Priemer: 4332.72 microseconds
+			Median: 3199 microseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

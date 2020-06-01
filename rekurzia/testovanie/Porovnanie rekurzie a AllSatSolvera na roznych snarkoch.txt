@@ -1,0 +1,150 @@
+Normal snarky:
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 83 microseconds
+			Max: 77337 microseconds
+			Priemer: 17109.2 microseconds
+			Median: 8582 microseconds 
+
+		Druhe zbehnutie:
+			Min: 99 microseconds
+			Max: 77782 microseconds
+			Priemer: 17203.5 microseconds
+			Median: 8141 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 2153 microseconds
+			Max: 8948 microseconds
+			Priemer: 4813.17 microseconds
+			Median: 5012 microseconds
+
+		Druhe zbehnutie:
+			Min: 2128 microseconds
+			Max: 8852 microseconds
+			Priemer: 4513 microseconds
+			Median: 4574 microseconds
+
+4-edge-critical snarky: 
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 264 microseconds
+			Max: 36873 microseconds
+			Priemer: 12415.1 microseconds
+			Median: 8107 microseconds 
+
+		Druhe zbehnutie:
+			Min: 156 microseconds
+			Max: 36567 microseconds
+			Priemer: 12298.3 microseconds
+			Median: 8241.5 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 2663 microseconds
+			Max: 6750 microseconds
+			Priemer: 4829.44 microseconds
+			Median: 5030 microseconds
+
+		Druhe zbehnutie:
+			Min: 2318 microseconds
+			Max: 7017 microseconds
+			Priemer: 4075.06 microseconds
+			Median: 4140 microseconds
+
+4-vertex-critical snarky:
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 267 microseconds
+			Max: 44217 microseconds
+			Priemer: 13655.8 microseconds
+			Median: 9371.5 microseconds 
+
+		Druhe zbehnutie:
+			Min: 332 microseconds
+			Max: 44342 microseconds
+			Priemer: 13168.1 microseconds
+			Median: 7811.5 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 2659 microseconds
+			Max: 7501 microseconds
+			Priemer: 4829.67 microseconds
+			Median: 4778.5 microseconds
+
+		Druhe zbehnutie:
+			Min: 2585 microseconds
+			Max: 7484 microseconds
+			Priemer: 4792.11 microseconds
+			Median: 4702 microseconds
+
+Circular-flow 5 snarky:
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 105 microseconds
+			Max: 43605 microseconds
+			Priemer: 14336 microseconds
+			Median: 10717 microseconds
+
+		Druhe zbehnutie:
+			Min: 98 microseconds
+			Max: 41554 microseconds
+			Priemer: 13715.4 microseconds
+			Median: 10613.5 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 2630 microseconds
+			Max: 7928 microseconds
+			Priemer: 5086.4 microseconds
+			Median: 5193 microseconds
+
+
+		Druhe zbehnutie:
+			Min: 2356 microseconds
+			Max: 6453 microseconds
+			Priemer: 4008.63 microseconds
+			Median: 3826.5 microseconds
+
+Oddness 4 (neparnost) snarky:
+	Rekurzia:
+		Prve zbehnutie:
+			Min: 161661 microseconds
+			Max: 715922 microseconds
+			Priemer: 384173 microseconds
+			Median: 336809 microseconds
+
+		Druhe zbehnutie:
+			Min: 161032 microseconds
+			Max: 718633 microseconds
+			Priemer: 383484 microseconds
+			Median: 335914 microseconds
+
+	AllSAT solver:	
+		Prve zbehnutie:
+			Min: 10220 microseconds
+			Max: 47928 microseconds
+			Priemer: 27943.8 microseconds
+			Median: 27565.5 microseconds
+
+		Druhe zbehnutie:
+			Min: 10006 microseconds
+			Max: 42398 microseconds
+			Priemer: 23897 microseconds
+			Median: 19851 microseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

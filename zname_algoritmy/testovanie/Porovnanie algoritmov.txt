@@ -1,0 +1,27 @@
+Na 26 kubickych grafoch:
+	Program s Tutteho maticou:
+		Prve zbehnutie:
+			Min: 2 microseconds
+			Max: 16 microseconds
+			Priemer: 6.53846 microseconds
+			Median: 8 microseconds 
+
+		Druhe zbehnutie:
+			Min: 3 microseconds
+			Max: 21 microseconds
+			Priemer: 8.26923 microseconds
+			Median: 10.5 microseconds
+
+	Zrychleny Rabin-Vazirani:
+		Prve zbehnutie:
+			Min: 42 microseconds
+			Max: 923 microseconds
+			Priemer: 273.192 microseconds
+			Median: 199.5 microseconds
+
+		Druhe zbehnutie:
+			Min: 39 microseconds
+			Max: 915 microseconds
+			Priemer: 303.692 microseconds
+			Median: 270.5 microseconds
+		
